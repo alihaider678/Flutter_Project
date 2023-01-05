@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "24437983165",
+    "project_id": "button-clicker-ccbc7",
+    "storage_bucket": "button-clicker-ccbc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24437983165:android:70d3ca05a9b2d38dc674d4",
+        "android_client_info": {
+          "package_name": "com.example.firebase_connection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24437983165-i0dlpcnr8fs4u8n34jrsmaldu6m2b5v2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuvwhkj69X1FA3z2krjVTNl9pUcMd9D3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24437983165-i0dlpcnr8fs4u8n34jrsmaldu6m2b5v2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
