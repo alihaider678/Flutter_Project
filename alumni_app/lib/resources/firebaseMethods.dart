@@ -11,7 +11,7 @@ class FirebaseMethods {
   FirebaseAuth _auth = FirebaseAuth.instance;
   FirebaseFirestore firestore = FirebaseFirestore.instance;
   // Get a non-default Storage bucket
-  final _storage = FirebaseStorage.instanceFor(bucket: 'gs://alumni-app-cb4c0.appspot.com');
+  final _storage = FirebaseStorage.instanceFor(bucket: 'gs://alumni-app-4e854.appspot.com');
 
   UploadTask _uploadTask;
 
