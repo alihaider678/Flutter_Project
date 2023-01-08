@@ -127,10 +127,10 @@ class _SecondUserProfilePageState extends State<SecondUserProfilePage> {
         backgroundColor: Color(0xff272c35),
         actions: [
           Container(
-              child:(currentUser.uid=='5kF7hNZmFoNbYdTQaHv9qSwOyYS2' ||  SubAdmin=='SUB')
+              child:(currentUser.uid=='QUyaqGdW2SOPWUCgz9tkYWcBQL02' ||  SubAdmin=='SUB')
                   ?
               Container(
-                  child:(currentUser.uid=='5kF7hNZmFoNbYdTQaHv9qSwOyYS2' )?
+                  child:(currentUser.uid=='QUyaqGdW2SOPWUCgz9tkYWcBQL02' )?
                   Container(
                     child: Row(
                       children: [
@@ -260,7 +260,7 @@ class _SecondUserProfilePageState extends State<SecondUserProfilePage> {
         child: Column(
           children: [
             Container(
-                child:(widget.qds.data()['uid'].toString()=='5kF7hNZmFoNbYdTQaHv9qSwOyYS2' )
+                child:(widget.qds.data()['uid'].toString()=='QUyaqGdW2SOPWUCgz9tkYWcBQL02' )
                     ?
                 Container(
                   child: Column(

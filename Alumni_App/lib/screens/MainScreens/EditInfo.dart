@@ -273,7 +273,7 @@ class _EditInfoState extends State<EditInfo> {
                       ),
                       SizedBox(height: 20),
                   Container(
-                    child:(currentUser.uid=='5kF7hNZmFoNbYdTQaHv9qSwOyYS2' )
+                    child:(currentUser.uid=='QUyaqGdW2SOPWUCgz9tkYWcBQL02' )
                         ?
                     Container(
 

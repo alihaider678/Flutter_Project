@@ -122,7 +122,7 @@ class _ChatScreenState extends State<ChatScreen> {
       height: 60,
       width: MediaQuery.of(context).size.width,
       color: UniversalVariables.separatorColor,
-      child:(widget.qds.data()['uid']=='5kF7hNZmFoNbYdTQaHv9qSwOyYS2' || widget.qds.data()['SubAdmin']=='SUB')? Row(
+      child:(widget.qds.data()['uid']=='QUyaqGdW2SOPWUCgz9tkYWcBQL02' || widget.qds.data()['SubAdmin']=='SUB')? Row(
         children: [
           Expanded(
             child: Container(
@@ -296,7 +296,7 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
           ),
           Container(
-            child:(currentUser.uid=='5kF7hNZmFoNbYdTQaHv9qSwOyYS2'|| SubAdmin=='SUB')
+            child:(currentUser.uid=='QUyaqGdW2SOPWUCgz9tkYWcBQL02'|| SubAdmin=='SUB')
                 ? _bottomContainer()
                 : _bottomContainer2()
           ),

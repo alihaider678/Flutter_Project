@@ -266,7 +266,7 @@ adminpost()
         children: [
          Column(
              children: [
-               (currentUser.uid=='5kF7hNZmFoNbYdTQaHv9qSwOyYS2'||  SubAdmin=='SUB')
+               (currentUser.uid=='QUyaqGdW2SOPWUCgz9tkYWcBQL02'||  SubAdmin=='SUB')
                    ? adminpost()
                    : notpost(),
              ],
