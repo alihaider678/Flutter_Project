@@ -12,3 +12,6 @@ Screenshots
 ![Screenshot_2023-01-08-20-13-52-44_8db847ac458ac078f818f898dd143b8a](https://user-images.githubusercontent.com/114726530/211206221-d1a40a38-f63f-486b-aa52-18dcc381e304.jpg)
 ![Screenshot_2023-01-08-20-14-16-24_8db847ac458ac078f818f898dd143b8a](https://user-images.githubusercontent.com/114726530/211206266-53540b80-3f18-4367-82ab-6bb20f1fab2e.jpg)
 ![Screenshot_2023-01-08-20-14-30-96_8db847ac458ac078f818f898dd143b8a](https://user-images.githubusercontent.com/114726530/211206279-a0f13fb8-03c2-458a-8a2e-6f1829dca291.jpg)
+
+
+https://www.linkedin.com/in/ali-haider-77a742207
