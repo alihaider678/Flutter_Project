@@ -31,7 +31,7 @@ class _ViewPageState extends State<ViewPage> {
         // once Completed, show your application
         if (snapshot.connectionState == ConnectionState.done) {
           return Scaffold(appBar: AppBar(
-            title: Text('View Users'),
+            title: Text('View Students'),
           ),
             body: UserList(),
           );

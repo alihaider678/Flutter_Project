@@ -68,7 +68,7 @@ class _UserPostCardState extends State<UserPostCard> {
                   baseColor:
                       widget.qds.data()['tag'].toString().toUpperCase() ==
                               "STUDENT"
-                          ? Colors.lightBlue
+                          ? Colors.blue.shade900
                           : Colors.red,
                   highlightColor: Colors.white,
                   child: Text(

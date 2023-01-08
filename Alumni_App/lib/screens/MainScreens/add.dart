@@ -100,13 +100,14 @@ class _AddPostState extends State<AddPost> {
 
   _appbar() {
     return AppBar(
-      title: Text("Create Post"),
+      title: Text("Create Post", style: TextStyle(color: Colors.black),),
       actions: [
         Container(
           margin: const EdgeInsets.only(right: 10.0),
           child: IconButton(
             icon: Icon(
               Icons.check,
+              color: Colors.black,
               size: 25,
             ),
             onPressed: () {
@@ -160,7 +161,7 @@ class _AddPostState extends State<AddPost> {
       elevation: 0,
       centerTitle: true,
       automaticallyImplyLeading: false,
-      backgroundColor: UniversalVariables.separatorColor,
+      backgroundColor: Colors.white,
     );
   }
 
@@ -239,7 +240,7 @@ adminpost()
       ),
       height: 60,
       width: MediaQuery.of(context).size.width,
-      color: UniversalVariables.separatorColor,
+      color: Colors.black,
       child: Row(
         children: [
           Expanded(
@@ -260,7 +261,7 @@ adminpost()
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appbar(),
-      backgroundColor: UniversalVariables.separatorColor,
+      backgroundColor: Colors.white,
       body: Column(
         children: [
          Column(

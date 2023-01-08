@@ -314,10 +314,13 @@ class _EditInfoState extends State<EditInfo> {
                               },
                             ),
                             MaterialButton(
-                              color: Colors.lightBlue,
+                              color: Colors.blue.shade900,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                              ),
                               child: Text(
                                 "Update Users",
-                                style: TextStyle(fontSize: 18),
+                                style: TextStyle(fontSize: 18,color: Colors.white),
                               ),
                               onPressed: () {
 

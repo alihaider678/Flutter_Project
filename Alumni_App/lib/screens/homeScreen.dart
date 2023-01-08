@@ -58,9 +58,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: Container(
         padding: EdgeInsets.symmetric(vertical: 10),
-        color:  UniversalVariables.separatorColor,
+        color:  Colors.white,
           child: CupertinoTabBar(
-            backgroundColor:  UniversalVariables.separatorColor,
+            backgroundColor:  Colors.white,
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(Icons.home,
