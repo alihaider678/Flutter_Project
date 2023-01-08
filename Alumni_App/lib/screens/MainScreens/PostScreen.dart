@@ -54,17 +54,20 @@ class _PostScreenState extends State<PostScreen> {
   Widget build(BuildContext context) {
     _appbar() {
       return AppBar(
-        title: Text("Interact"),
+        title: Text("Home",
+        style: TextStyle(
+          color: Colors.black
+        ),),
         elevation: 0,
         centerTitle: true,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xff272c35),
+        backgroundColor: Colors.white,
       );
     }
 
     return Scaffold(
       appBar: _appbar(),
-      backgroundColor: UniversalVariables.separatorColor,
+      backgroundColor: Colors.white,
       body: _list.length==0?Container(child: Center(child: CircularProgressIndicator())):SmartRefresher(
         header: WaterDropHeader(),
         controller: _refreshController,
@@ -74,7 +77,7 @@ class _PostScreenState extends State<PostScreen> {
           itemBuilder: (c, i) => PostCard(_list[i]),
           itemCount: _list.length,
           separatorBuilder: (context, index) => Divider(
-        color: Colors.grey,
+        color: Colors.white,
       ),
         ),
       ),

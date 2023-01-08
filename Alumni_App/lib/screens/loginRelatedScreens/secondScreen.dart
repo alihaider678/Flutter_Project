@@ -46,14 +46,14 @@ class _SecondScreenState extends State<SecondScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: UniversalVariables.blackColor,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: UniversalVariables.blackColor,
+        backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
-          "Enter info",
-          style: TextStyle(color: Colors.white, fontSize: 23),
+          "Please Enter your Detail",
+          style: TextStyle(color: Colors.black, fontSize: 23),
         ),
         elevation: 0,
       ),
@@ -190,7 +190,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         return null;
                       },
                       decoration: InputDecoration(
-                        hintText: "Roll number(e.g:FA19-BCS-000)",
+                        hintText: "Registeration No(e.g:FA19-BCS-000)",
                         hintStyle:
                             TextStyle(fontSize: 16, color: Colors.grey[900]),
                         filled: true,
@@ -258,7 +258,7 @@ setState(() {
                             },
                             activeColor: Colors.red,),
                           SizedBox( width: 5.0,),
-                            Text("Alumni",style: TextStyle(color: Colors.white, fontSize: 16),),
+                            Text("Alumni",style: TextStyle(color: Colors.black, fontSize: 16),),
                           ],
                         ),
                         Row(
@@ -270,7 +270,7 @@ setState(() {
                               });
                             }),
                             SizedBox( width: 5.0,),
-                            Text("Student",style: TextStyle(color: Colors.white, fontSize: 16),),
+                            Text("Student",style: TextStyle(color: Colors.black, fontSize: 16),),
                           ],
                         ),
                       ],
@@ -344,10 +344,15 @@ setState(() {
                     ),
                     SizedBox(height: 20),
                     MaterialButton(
-                      color: Colors.lightBlue,
+                      color: Colors.blue.shade900,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                      ),
                       child: Text(
-                        "Continue",
-                        style: TextStyle(fontSize: 18),
+                        "Submit and Continue",
+                        style: TextStyle(fontSize: 18,
+                        color: Colors.white,
+                        ),
                       ),
                       onPressed: () {
                         if (_formKey.currentState.validate()) {

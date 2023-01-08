@@ -63,14 +63,14 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     _appbar() {
       return AppBar(
-        title: userData==null?Text("User Info"):Text(userData.data()['rollNumber'].toString().toUpperCase(),overflow: TextOverflow.ellipsis,),
+        title: userData==null?Text("User Info"):Text(userData.data()['rollNumber'].toString().toUpperCase(),overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.black),),
         elevation: 0,
         centerTitle: true,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xff272c35),
+        backgroundColor: Colors.white,
         actions: [
           IconButton(
-            icon: Icon(Icons.logout, color: Colors.white),
+            icon: Icon(Icons.logout, color: Colors.black),
             onPressed: () {
               _showDialog();
             },
@@ -88,27 +88,21 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
-              child: Shimmer.fromColors(
-                baseColor:
-                    userData.data()['tag'].toString().toUpperCase() == "STUDENT"
-                        ? Colors.lightBlue
-                        : Colors.red,
-                highlightColor: Colors.white,
+
                 child: Text(
                   "${userData.data()['tag'].toString().toUpperCase()} ${userData.data()['course'].toString().toUpperCase()}",
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
-              ),
             ),
             Container(
               width: MediaQuery.of(context).size.width,
               child: Text(
                 "${userData.data()['startingYear'].toString().toUpperCase()} - ${userData.data()['endingYear'].toString().toUpperCase()}",
-                style: TextStyle(color: Colors.white, fontSize: 18),
+                style: TextStyle(color: Colors.black, fontSize: 18),
               ),
             ),
             SizedBox(height: 10),
@@ -116,14 +110,14 @@ class _ProfilePageState extends State<ProfilePage> {
               width: MediaQuery.of(context).size.width,
               child: Text(
                 userData.data()['name'].toString().toUpperCase(),
-                style: TextStyle(color: Colors.white, fontSize: 24),
+                style: TextStyle(color: Colors.black, fontSize: 24),
               ),
             ),
             Container(
               width: MediaQuery.of(context).size.width,
               child: Text(
                 userData.data()['branch'].toString(),
-                style: TextStyle(color: Colors.white, fontSize: 18),
+                style: TextStyle(color: Colors.black, fontSize: 18),
               ),
             ),
           ],
@@ -139,7 +133,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   child: Center(
                     child: Text(
                       "No posts Yet....",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: TextStyle(color: Colors.black, fontSize: 20),
                     ),
                   ),
                 )
@@ -150,7 +144,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
     return Scaffold(
       appBar: _appbar(),
-      backgroundColor: UniversalVariables.separatorColor,
+      backgroundColor: Colors.white,
       body: Container(
         width: MediaQuery.of(context).size.width,
         child: userData == null

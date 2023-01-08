@@ -138,7 +138,7 @@ class _LogInState extends State<LogIn> {
                                 },
                               ),
                               SizedBox(
-                                height: 10,
+                                height: 20,
                               ),
                               forgetPassword(context),
                               MaterialButton(
@@ -248,7 +248,7 @@ class _LogInState extends State<LogIn> {
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 20, vertical: 10),
                                 shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10.0),
+                                    borderRadius: BorderRadius.circular(18.0),
                                     side: BorderSide(color: Colors.white)),
                               ),
                               SizedBox(

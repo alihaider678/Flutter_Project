@@ -51,14 +51,14 @@ class _EditInfoState extends State<EditInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: UniversalVariables.separatorColor,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: UniversalVariables.separatorColor,
+        backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
-          "Update info",
-          style: TextStyle(color: Colors.white, fontSize: 23),
+          "Update Detail",
+          style: TextStyle(color: Colors.black, fontSize: 23),
         ),
         elevation: 0,
 
@@ -280,10 +280,14 @@ class _EditInfoState extends State<EditInfo> {
                         child: Column(
                           children: [
                             MaterialButton(
-                              color: Colors.lightBlue,
+                              color: Colors.blue.shade900,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                              ),
                               child: Text(
                                 "Save",
-                                style: TextStyle(fontSize: 18),
+                                style: TextStyle(fontSize: 18,
+                                color: Colors.white),
                               ),
                               onPressed: () {
                                 if (_formKey.currentState.validate()) {

@@ -18,7 +18,7 @@ class _SearchScreenState extends State<SearchScreen> {
     return AppBar(
       elevation: 0,
       automaticallyImplyLeading: false,
-      backgroundColor: UniversalVariables.separatorColor,
+      backgroundColor: Colors.white,
       title: Container(
         height: 46,
         margin: EdgeInsets.symmetric(vertical: 10),
@@ -57,7 +57,7 @@ class _SearchScreenState extends State<SearchScreen> {
       ),
       actions: [
         IconButton(
-            icon: Icon(Icons.close),
+            icon: Icon(Icons.close,color: Colors.black,),
             onPressed: () {
               setState(() {
                 _controller.clear();
@@ -82,7 +82,7 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: customAppBar(),
-      backgroundColor: UniversalVariables.separatorColor,
+      backgroundColor: Colors.white,
       body: Container(
         child: ListView.builder(
           itemCount: _smallList.length,
