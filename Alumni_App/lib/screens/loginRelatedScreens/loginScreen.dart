@@ -27,36 +27,48 @@ class _LogInState extends State<LogIn> {
     double width = MediaQuery.of(context).size.width;
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      appBar: AppBar(
+        elevation: 0,
+        brightness: Brightness.light,
+        backgroundColor: Colors.white,
+        leading:
+        IconButton( onPressed: (){
+          Navigator.pop(context);
+        },icon:Icon(Icons.arrow_back_ios,size: 20,color: Colors.black,)),
+      ),
       body: Builder(
         builder: (context) {
           return SingleChildScrollView(
             child: Stack(children: [
               Container(
-                height: height,
-                width: width,
-                color: Colors.black,
+                height: MediaQuery.of(context).size.height,
+                width: double.infinity,
+                color: Colors.white,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
                       height: height * .3,
                       alignment: Alignment.bottomCenter,
-                      child: Shimmer.fromColors(
-                        baseColor: Colors.white,
-                        highlightColor: Colors.lightBlue,
                         child: Text(
-                          'Sign In',
+                          'Log In',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 60.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                      ),
                     ),
+                    SizedBox(height: 40,),
+                    Text("Welcome back ! Login with your credentials",style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey[700],
+                    ),),
                     Expanded(
                       child: Container(
                         alignment: Alignment.bottomCenter,
-                        padding: const EdgeInsets.fromLTRB(10, 0, 10, 100),
+                        padding: const EdgeInsets.fromLTRB(10, 10, 10, 300),
                         child: Form(
                           key: _formKey,
                           child: Column(
@@ -130,10 +142,11 @@ class _LogInState extends State<LogIn> {
                               ),
                               forgetPassword(context),
                               MaterialButton(
-                                color: Colors.lightBlue,
+                                color: Colors.blue.shade900,
                                 child: Text(
-                                  "Sign In",
-                                  style: TextStyle(fontSize: 18),
+                                  "Log In",
+                                  style: TextStyle(fontSize: 18,
+                                  color: Colors.white),
                                 ),
                                 onPressed: () {
                                   if (_formKey.currentState.validate()) {
@@ -247,7 +260,7 @@ class _LogInState extends State<LogIn> {
                                   Text(
                                     "Don't have an account ?",
                                     style: TextStyle(
-                                        color: Colors.white, fontSize: 16),
+                                        color: Colors.black, fontSize: 16),
                                   ),
                                   GestureDetector(
                                     onTap: () {
@@ -257,8 +270,9 @@ class _LogInState extends State<LogIn> {
                                     child: Text(
                                       " signUp now",
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.black,
                                         fontSize: 16,
+                                        fontWeight: FontWeight.bold,
                                         decoration: TextDecoration.underline,
                                       ),
                                     ),

@@ -24,37 +24,50 @@ class _SignUpState extends State<SignUp> {
     double width = MediaQuery.of(context).size.width;
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
+      //resizeToAvoidBottomInset: false,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        brightness: Brightness.light,
+        backgroundColor: Colors.white,
+        leading:
+        IconButton( onPressed: (){
+          Navigator.pop(context);
+        },icon:Icon(Icons.arrow_back_ios,size: 20,color: Colors.black,)),
+      ),
       body: SingleChildScrollView(
         child: Builder(builder: (context) {
           return Container(
             height: height,
             width: width,
-            color: Colors.black,
+            color: Colors.white,
             child: Column(
               children: [
                 Container(
                   height: height * .3,
                   alignment: Alignment.bottomCenter,
-                  child: Shimmer.fromColors(
-                    baseColor: Colors.white,
-                    highlightColor: Colors.lightBlue,
                     child: Text(
-                      'Register Now',
+                      'Sign Up',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 50.0,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ),
                 ),
+                SizedBox(height: 20,),
+                Text("Create an Account,Its free",style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey[700],
+                ),),
                 // SizedBox(
                 //   height: MediaQuery.of(context).size.height * .1,
                 // ),
                 Expanded(
                   child: Container(
                     alignment: Alignment.bottomCenter,
-                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 100),
+                    padding: const EdgeInsets.fromLTRB(10, 10, 10, 350),
                     child: Form(
                       key: _formKey,
                       child: Column(
@@ -159,10 +172,11 @@ class _SignUpState extends State<SignUp> {
                             height: 15,
                           ),
                           MaterialButton(
-                            color: Colors.lightBlue,
+                            color: Colors.blue.shade900,
                             child: Text(
                               "Sign Up",
-                              style: TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: 18,
+                              color: Colors.white),
                             ),
                             onPressed: () {
                               if (_formKey.currentState.validate()) {
@@ -207,7 +221,7 @@ class _SignUpState extends State<SignUp> {
                               Text(
                                 "Already have an account ?",
                                 style: TextStyle(
-                                    color: Colors.white, fontSize: 16),
+                                    color: Colors.black, fontSize: 16),
                               ),
                               GestureDetector(
                                 onTap: () {
@@ -215,9 +229,10 @@ class _SignUpState extends State<SignUp> {
                                       .pushReplacementNamed('signIn');
                                 },
                                 child: Text(
-                                  " signIn now",
+                                  " LogIn now",
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
                                     fontSize: 16,
                                     decoration: TextDecoration.underline,
                                   ),
