@@ -1,16 +1,11 @@
-# final_open_task
+# Final Task
 
-A new Flutter project.
+A new Flutter project with Firebase Connection.
 
-## Getting Started
+## Student Information
 
-This project is a starting point for a Flutter application.
+Name: Ali Haider
 
-A few resources to get you started if this is your first Flutter project:
+Reg No: SP19-BCS-006
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Section: A-B18-BCS
